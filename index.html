@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Example</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="item main">
+    <section class="form-container">
+      <form class="registration-form">
+        <h1>New Account Registration</h1>
+        <h2>Student's Information</h2>
+        <p>Please enter required field.</p>
+
+        <!-- Full name -->
+        <div class="input-container">
+          <div class="first-name input-group">
+            <label class="label" for="first-name">First name <span class="red-star">*</span></label>
+            <input class="input" type="text" name="first-name" id="first-name" placeholder="ex. Juan" required>
+          </div>
+
+          <div class="middle-name input-group">
+            <label class="label" for="first-name">Middle name <span class="red-star">*</span></label>
+            <input class="input" type="text" name="first-name" id="first-name" placeholder="ex. Dela Cruz" required>
+          </div>
+
+          <div class="last-name input-group">
+            <label class="label" for="first-name">Last name <span class="red-star">*</span></label>
+            <input class="input" type="text" name="first-name" id="first-name" placeholder="ex. Dela Cruz" required>
+          </div>
+        </div>
+
+        <!-- Date of birth, Sex -->
+        <div class="input-container">
+          <div class="date input-group">
+            <label class="label" for="date">Date of Birth <span class="red-star">*</span></label>
+            <input class="input" type="date" name="date" id="date" required>
+          </div>
+
+          <div class="sex input-group">
+            <label class="label" for="sex">Sex <span class="red-star">*</span></label>
+            <select class="input" name="sex" id="sex">
+              <option value="" disabled selected>Select your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Email, Contact number -->
+        <div class="input-container">
+          <div class="email input-group">
+            <label class="label" for="email">Email <span class="red-star">*</span></label>
+            <input class="input" type="email" name="email" id="email" placeholder="ex. juan.delacruz@gmail.com" required>
+          </div>
+
+          <div class="contact input-group">
+            <label class="label" for="contact">Contact <span class="red-star">*</span></label>
+            <input class="input" type="number" name="contact" id="contact" placeholder="ex. 09123456789" required>
+          </div>
+        </div>
+
+        <!-- Programs -->
+        <div class="input-container">
+          <div class="programs-input-group">
+            <label class="label" for="programs">Programs Applying for: <span class="red-star">*</span></label>
+            <select class="input" id="programs" name="programCode" style="width:100%" required="required">
+              <option value="" disabled selected>Choose your desired program</option>
+              <option value="AB THEO">Bachelor of Arts in Theology</option>
+              <option value="AT-NC II">Automotive Servicing NC II</option>
+              <option value="BA ENG">Bachelor of Arts in English Language</option>
+              <option value="BEED">Bachelor of Elementary Education</option>
+              <option value="BS PSYCH">Bachelor of Science in Psychology</option>
+              <option value="BSA">Bachelor of Science in Accountancy</option>
+              <option value="BSBA-FINANCIAL MANAGEMENT">Bachelor of Science in Business Administration Major in
+                Financial
+                Management
+              </option>
+              <option value="BSBA-MARKETING MANAGEMENT">Bachelor of Science in Business Administration Major in
+                Marketing
+                Management
+              </option>
+              <option value="BSCRIM">Bachelor of Science in Criminology</option>
+              <option value="BSED-ENGLISH">Bachelor of Secondary Education Major in English</option>
+              <option value="BSED-FILIPINO">Bachelor of Secondary Education Major in Filipino</option>
+              <option value="BSED-MATHEMATICS">Bachelor of Secondary Education Major in Mathematics</option>
+              <option value="BSED-SCIENCE">Bachelor of Secondary Education Major in Science</option>
+              <option value="BSHM">Bachelor of Science in Hospitality Management</option>
+              <option value="BSISM">Bachelor of Science in Industrial Security Management</option>
+              <option value="BSIT-NETWORK TECHNOLOGY">Bachelor of Science in Information Technology with Specialization
+                in
+                Network
+                Technology</option>
+              <option value="BSIT-WEB AND MOBILE APPLICATION DEVELOPMENT">Bachelor of Science in Information Technology
+                with
+                Specialization in Web and Mobile Application Development</option>
+              <option value="BSOA">Bachelor of Science in Office Administration</option>
+              <option value="BSSW">Bachelor of Science in Social Work</option>
+              <option value="BTVTED-AUTOMOTIVE TECHNOLOGY">Bachelor of Technical - Vocational Teacher Education Major in
+                Automotive
+                Technology</option>
+              <option value="BTVTED-ELECTRICAL TECHNOLOGY">Bachelor of Technical - Vocational Teacher Education Major in
+                Electrical
+                Technology</option>
+              <option value="EIM-NC II">Electrical Installation and Maintenance NC II</option>
+              <option value="HCS-NC II">Healthcare Services NC II</option>
+              <option value="PROF ED">Professional Education(18 units)</option>
+              <option value="SL">Sign Language</option>
+              <option value="SMAW-NC I">Shielded Metal Arc Welding-NC I</option>
+              <option value="SMAW-NC II">Shielded Metal Arc Welding-NC II</option>
+              <option value="TM">Trainers Methodology</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Term, Student status -->
+        <div class="input-container">
+          <div class="term input-group">
+            <label class="label" for="term">Term Applying for: <span class="red-star">*</span></label>
+            <select class="input" name="term" id="term">
+              <option value="" disabled selected></option>
+              <option value="first-semester">1st Semester</option>
+              <option value="second-semester">2nd Semester</option>
+            </select>
+          </div>
+
+          <div class="status input-group">
+            <label class="label" for="status">Applying as: <span class="red-star">*</span></label>
+            <select class="input" name="status" id="status">
+              <option value="" disabled selected></option>
+              <option value="old">Old student</option>
+              <option value="new">New student</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!--  -->
+    </section>
+    <section class="table-container">
+      <table>
+      </table>
+    </section>
+  </main>
+  <footer class="item footer">
+    <h1>Footer</h1>
+  </footer>
+</body>
+
+</html>

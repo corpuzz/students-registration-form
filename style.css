@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: #eee;
+    background-image: url(./img/login_bg.png);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 100% 5rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    grid-template-columns: 1fr 3fr 1fr; 
+  }
+
+  main {
+    grid-column: 2 / 2;
+  }
+}
+
+@media (max-width: 799px) {
+  body {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1f));
+  }
+  main {
+    grid-column: span 3;
+  }
+
+}
+
+footer {
+    grid-column: span 3;
+    background-color: goldenrod;
+}
+
+.item {
+    border: 2px solid rgb(246, 246, 246);
+}
+
+/* Form Styling */
+.form-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.registration-form {
+    width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h1 {
+    margin-top: 0;
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+.registration-form h2 {
+    font-size: 13pt;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.registration-form p {
+    font-size: 10pt;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #838383;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 5px 0;
+}
+
+.input-group {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+input {
+    padding: 10px;
+    color: #888;
+}
+
+.input {
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid rgb(173, 173, 173);
+    outline: none;
+}
+
+input:hover,
+input:focus {
+    border: 1px solid tomato;
+}
+
+.label {
+    margin-bottom: 5px;
+    font-size: 9pt;
+    font-weight: 600;
+    color: #888;
+}
+
+.programs-input-group select {
+    margin-top: 5px;
+}
+
+#term,
+#status,
+#programs,
+#sex {
+    -webkit-appearance: none;
+    padding: 10px;
+    outline: none;
+    background-image: url(./img/caret-down.svg);
+    background-position: calc(100% - 6px) center;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+#term:hover,
+#status:hover,
+#programs:hover,
+#sex:hover {
+    border: 1px solid tomato;
+}
+
+span {
+    color: tomato;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit, #new-student-btn {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #f6f6f6;
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:focus, #new-student-btn:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#submit:hover, #new-student-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fb7832;
+}
+
+#submit:active, #new-student-btn:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .input-group {
+        flex-basis: 100%;
+    }
+
+    .registration-form {
+        width: 100%;
+        margin: 4%;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .form-container {
+        height: 100%;
+    }
+}
