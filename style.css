@@ -178,7 +178,10 @@ span {
     height: calc(100% - 4.5rem);
     padding-bottom: 100px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: visible;
+}
+
+.table-group:hover {
 }
 
 .student-list {
@@ -189,8 +192,10 @@ span {
 }
 
 .table-header {
+    height: 3rem;
     display: flex;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     gap: 0 5px;
 }
@@ -239,15 +244,20 @@ th {
     color: #888;
     font-weight: 700;
     font-size: 9pt;
+}
+
+thead {
     position: sticky;
     background-color: white;
     top: 0;
+    z-index: 1;
 }
 
 .table {
     width: 100%;
     border-spacing: 1rem 0.5rem;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 #students-title {
