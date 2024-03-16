@@ -146,58 +146,29 @@
     </section>
      <hr>
 
+    <button id="test-btn">TEST</button>
     <!-- Table Section -->
     <section class="table-container">
       <div class="student-list">
         <div class="table-header">
           <p id="students-title">Students</p>
-          <p id="active">Active(<span id="students-counter">221</span>)</p>
+          <p id="active">Active(<span id="students-counter">0</span>)</p>
           <input class="input" type="text" id="search" name="search" placeholder="Search">
           <a href="" target=".form-container"><button id="new-student-btn">+ New Student</button></a>
         </div>
         <div class="table-group">
-          <table class="table t-width">
+          <table id="table" class="table t-width">
             <thead>
               <tr>
-                <th>NAME</th>
-                <th>GENDER</th>
-                <th>EMAIL</th>
-                <th>PROGRAM</th>
-                <th>WILL ENROLL NEXT TERM</th>
+                <th class="tname-col">NAME</th>
+                <th class="tgender-col">GENDER</th>
+                <th class="temail-col">EMAIL</th>
+                <th class="tprogram-col">PROGRAM</th>
+                <th class="tenroll-col">WILL ENROLL NEXT TERM</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Abaggue, Pia Jane B.</td>
-                <td>FEMALE</td>
-                <td>pj.abaggue@gmail.com</td>
-                <td>BSCRIM</td>
-                <td>&#x2705; Yes</td>
-              </tr>
-
-              <tr>
-                <td>Abaggue, Pia Jane B.</td>
-                <td>FEMALE</td>
-                <td>pj.abaggue@gmail.com</td>
-                <td>BSCRIM</td>
-                <td>&#x2705; Yes</td>
-              </tr>
-
-              <tr>
-                <td>Abaggue, Pia Jane B.</td>
-                <td>FEMALE</td>
-                <td>pj.abaggue@gmail.com</td>
-                <td>BSCRIM</td>
-                <td>&#10060; No</td>
-              </tr>
-
-              <tr>
-                <td>Abaggue, Pia Jane B.</td>
-                <td>FEMALE</td>
-                <td>pj.abaggue@gmail.com</td>
-                <td>BSCRIM</td>
-                <td>&#10060; No</td>
-              </tr>
+            <tbody id="tbody">
+              <!-- Dynamically add entry -->
             </tbody>
           </table>
         </div>
@@ -212,6 +183,7 @@
   <footer class="item footer">
     <p align="center">All rights reserved</p>
   </footer>
+<script src="./script.js"></script>
 </body>
 
 </html>

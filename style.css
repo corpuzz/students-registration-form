@@ -173,8 +173,12 @@ span {
 }
 
 .table-group {
+    /* border: 1px solid black; */
     width: 100%;
-    /* overflow-x: scroll; */
+    height: calc(100% - 4.5rem);
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .student-list {
@@ -200,16 +204,44 @@ span {
 
 th,
 td {
+    /* width: calc(100% / 5); */
     border-bottom: 1px solid rgb(185, 185, 185);
     padding: 10px 0;
 }
 
+.tname-col {
+    width: 35ch;
+}
+
+.tgender-col {
+    width: 20ch;
+}
+
+.temail-col {
+    width: 35ch;
+}
+
+.tenroll-col {
+    width: 30ch;
+}
+
+.yes-icon {
+    padding: 10px 1.3rem;
+    background: transparent url(./img/check-circle-svgrepo-com.svg) no-repeat 0px center;
+    background-position-y: 12px;
+    background-size: 20px;
+}
+
 th {
+    border-bottom: 1px solid rgb(185, 185, 185);
     padding-bottom: 5px;
     text-align: left;
     color: #888;
     font-weight: 700;
     font-size: 9pt;
+    position: sticky;
+    background-color: white;
+    top: 0;
 }
 
 .table {
