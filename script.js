@@ -14,18 +14,11 @@ function insertEntry() {
     const tdProgram = document.createElement('td');
     const tdLastColumn = document.createElement('td');
 
-    const txtName = document.createTextNode('Mark Janlee Corpuz D.');
-    const txtGender = document.createTextNode('Male');
-    const txtEmail = document.createTextNode('example@gmail.com');
-    const txtProgram = document.createTextNode('BSIT');
-    const txtLastColumn = document.createTextNode('Yes');
-
-    tdName.appendChild(txtName);
-    tdGender.appendChild(txtGender);
-    tdEmail.appendChild(txtEmail);
-    tdProgram.appendChild(txtProgram);
-    tdLastColumn.appendChild(txtLastColumn);
-
+    tdName.innerText = 'Cabradella, Cherry A.';
+    tdGender.innerText = 'FEMALE';
+    tdEmail.innerText = 'cherry@gmail.com';
+    tdProgram.innerText = 'BSIT';
+    tdLastColumn.innerText = 'BSIT';
 
     tdLastColumn.classList.add('yes-icon');
 
