@@ -165,7 +165,6 @@ span {
 /* Table styling */
 .table-container {
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,9 +177,6 @@ span {
     padding-bottom: 100px;
     overflow-x: hidden;
     overflow-y: visible;
-}
-
-.table-group:hover {
 }
 
 .student-list {
@@ -229,18 +225,36 @@ td {
     width: 30ch;
 }
 
+.enroll-entry-group {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.yes-icon, 
+.no-icon,
+.dots-icon {
+    width: 18px;
+    height: 18px;
+}
+
 .yes-icon {
-    padding: 10px 1.3rem;
-    background: transparent url(./img/check-circle-svgrepo-com.svg) no-repeat 0px center;
-    background-position-y: 12px;
-    background-size: 20px;
+    margin-right: 4px;
+    background:transparent url(./img/check-circle-svgrepo-com.svg) no-repeat 0px center;
+    background-size: 18px;
 }
 
 .no-icon {
-    padding: 10px 1.3rem;
-    background: transparent url(./img/cross-circle-svgrepo-com.svg) no-repeat 2px center;
-    background-position-y: 14px;
-    background-size: 16px;
+    margin-right: 4px;
+    background:transparent url(./img/cross-circle-svgrepo-com.svg) no-repeat 0px center;
+    background-size: 18px;
+}
+
+.dots-icon {
+    margin-left: auto;
+    background:transparent url(./img/dots-vertical-svgrepo-com.svg) no-repeat 0px center;
+    background-size: 18px;
 }
 
 th {
@@ -274,7 +288,7 @@ thead {
 
 #active, #students-counter {
     font-weight: 600;
-    color: rgb(13, 151, 206);
+    color: #0d97ce;
 }
 
 #new-student-btn {

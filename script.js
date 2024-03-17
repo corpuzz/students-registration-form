@@ -28,7 +28,12 @@ function insertEntry(e) {
     tdGender.innerText = gender.value;
     tdEmail.innerText = email.value;
     tdProgram.innerText = program.value;
-    tdLastColumn.innerText = 'Yes';
+    tdLastColumn.innerHTML = `
+                  <div class="enroll-entry-group">
+                    <div class="yes-icon"></div>
+                    <p class="yes-text">Yes</p>
+                    <div class="dots-icon"></div>
+                  </div>`;
 
     tdLastColumn.classList.add('yes-icon');
 
@@ -43,4 +48,4 @@ function insertEntry(e) {
     studentsCounter.innerText = studCountValue.toString();
 }
 
-form.addEventListener('submit', insertEntry);
+testBtn.addEventListener('click', insertEntry);
