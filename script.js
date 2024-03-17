@@ -2,7 +2,8 @@ const table = document.getElementById('table');
 const tbody = document.getElementById('tbody');
 const testBtn = document.getElementById('test-btn');
 const studentsCounter = document.getElementById('students-counter');
-let studCountValue = 0;
+let studCountValue = 4;
+studentsCounter.innerText = studCountValue.toString();
 
 testBtn.addEventListener('click', insertEntry);
 
@@ -30,5 +31,5 @@ function insertEntry() {
     tr.appendChild(tdLastColumn);
 
     studCountValue++;
-    studentsCounter.textContent = studCountValue.toString();
+    studentsCounter.innerText = studCountValue.toString();
 }
