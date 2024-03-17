@@ -46,6 +46,7 @@ function insertEntry(e) {
 
     studCountValue++;
     studentsCounter.innerText = studCountValue.toString();
+    form.reset();
 }
 
 form.addEventListener('submit', insertEntry);
