@@ -1,3 +1,9 @@
+const firstName = document.getElementById('first-name');
+const middleName = document.getElementById('middle-name');
+const lastName = document.getElementById('last-name');
+
+
+
 const table = document.getElementById('table');
 const tbody = document.getElementById('tbody');
 const testBtn = document.getElementById('test-btn');
