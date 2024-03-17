@@ -236,6 +236,13 @@ td {
     background-size: 20px;
 }
 
+.no-icon {
+    padding: 10px 1.3rem;
+    background: transparent url(./img/cross-circle-svgrepo-com.svg) no-repeat 2px center;
+    background-position-y: 14px;
+    background-size: 16px;
+}
+
 th {
     border-bottom: 1px solid rgb(185, 185, 185);
     padding-bottom: 5px;

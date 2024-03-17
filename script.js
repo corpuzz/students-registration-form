@@ -19,7 +19,7 @@ function insertEntry() {
     tdGender.innerText = 'FEMALE';
     tdEmail.innerText = 'cherry@gmail.com';
     tdProgram.innerText = 'BSIT';
-    tdLastColumn.innerText = 'BSIT';
+    tdLastColumn.innerText = 'Yes';
 
     tdLastColumn.classList.add('yes-icon');
 
