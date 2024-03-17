@@ -11,7 +11,7 @@
 <body>
   <main class="item main">
     <section class="form-container">
-      <form class="registration-form">
+      <form id="form" class="registration-form">
         <h1>New Account Registration</h1>
         <h2>Student's Information</h2>
         <p>Please enter required field.</p>
@@ -38,15 +38,15 @@
         <div class="input-container">
           <div class="date input-group">
             <label class="label" for="date">Date of Birth <span class="red-star">*</span></label>
-            <input class="input" type="date" name="date" id="date" required>
+            <input class="input" type="date" name="date" id="date">
           </div>
 
           <div class="sex input-group">
             <label class="label" for="sex">Sex <span class="red-star">*</span></label>
-            <select class="input" name="sex" id="sex">
+            <select class="input" name="sex" id="sex" required>
               <option value="" disabled selected>Select your gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
+              <option value="MALE">Male</option>
+              <option value="FEMALE">Female</option>
             </select>
           </div>
         </div>
@@ -61,7 +61,7 @@
 
           <div class="contact input-group">
             <label class="label" for="contact">Contact <span class="red-star">*</span></label>
-            <input class="input" type="number" name="contact" id="contact" placeholder="ex. 09123456789" required>
+            <input class="input" type="number" name="contact" id="contact" placeholder="ex. 09123456789">
           </div>
         </div>
 
@@ -140,13 +140,13 @@
         </div>
 
         <div class="button-container">
-          <button id="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
         </div>
       </form>
     </section>
     <hr>
 
-    <button id="test-btn">TEST</button>
+
     <!-- Table Section -->
     <section class="table-container">
       <div class="student-list">

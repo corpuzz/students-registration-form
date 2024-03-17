@@ -1,8 +1,10 @@
+const form = document.getElementById('form');
 const firstName = document.getElementById('first-name');
 const middleName = document.getElementById('middle-name');
 const lastName = document.getElementById('last-name');
-
-
+const gender = document.getElementById('sex');
+const email = document.getElementById('email');
+const program = document.getElementById('programs');
 
 const table = document.getElementById('table');
 const tbody = document.getElementById('tbody');
@@ -11,9 +13,9 @@ const studentsCounter = document.getElementById('students-counter');
 let studCountValue = 4;
 studentsCounter.innerText = studCountValue.toString();
 
-testBtn.addEventListener('click', insertEntry);
 
-function insertEntry() {
+function insertEntry(e) {
+    e.preventDefault();
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     const tdGender = document.createElement('td');
@@ -21,21 +23,24 @@ function insertEntry() {
     const tdProgram = document.createElement('td');
     const tdLastColumn = document.createElement('td');
 
-    tdName.innerText = 'Cabradella, Cherry A.';
-    tdGender.innerText = 'FEMALE';
-    tdEmail.innerText = 'cherry@gmail.com';
-    tdProgram.innerText = 'BSIT';
+    tdName.innerText = `${lastName.value}, ${firstName.value} ${middleName.value.charAt(0)}.`;
+
+    tdGender.innerText = gender.value;
+    tdEmail.innerText = email.value;
+    tdProgram.innerText = program.value;
     tdLastColumn.innerText = 'Yes';
 
     tdLastColumn.classList.add('yes-icon');
 
-    tbody.appendChild(tr);
     tr.appendChild(tdName);
     tr.appendChild(tdGender);
     tr.appendChild(tdEmail);
     tr.appendChild(tdProgram);
     tr.appendChild(tdLastColumn);
+    tbody.appendChild(tr);
 
     studCountValue++;
     studentsCounter.innerText = studCountValue.toString();
 }
+
+form.addEventListener('submit', insertEntry);
