@@ -10,7 +10,7 @@ const table = document.getElementById('table');
 const tbody = document.getElementById('tbody');
 const testBtn = document.getElementById('test-btn');
 const studentsCounter = document.getElementById('students-counter');
-let studCountValue = 4;
+let studCountValue = 6;
 studentsCounter.innerText = studCountValue.toString();
 
 
