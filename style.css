@@ -147,7 +147,7 @@ span {
     margin: 10px 0;
     font-weight: 600;
     color: #f6f6f6;
-    background-color:rgb(52, 189, 52);
+    background-color: rgb(52, 189, 52);
     border: none;
     cursor: pointer;
 }
@@ -232,7 +232,7 @@ td {
     align-content: center;
 }
 
-.yes-icon, 
+.yes-icon,
 .no-icon,
 .dots-icon {
     width: 18px;
@@ -241,19 +241,20 @@ td {
 
 .yes-icon {
     margin-right: 4px;
-    background:transparent url(./img/check-circle-svgrepo-com.svg) no-repeat 0px center;
+    background: transparent url(./img/check-circle-svgrepo-com.svg) no-repeat 0px center;
     background-size: 18px;
 }
 
 .no-icon {
     margin-right: 4px;
-    background:transparent url(./img/cross-circle-svgrepo-com.svg) no-repeat 0px center;
-    background-size: 18px;
+    margin-left: 2px;
+    background: transparent url(./img/cross-circle-svgrepo-com.svg) no-repeat 0px center;
+    background-size: 15px;
 }
 
 .dots-icon {
     margin-left: auto;
-    background:transparent url(./img/dots-vertical-svgrepo-com.svg) no-repeat 0px center;
+    background: transparent url(./img/dots-vertical-svgrepo-com.svg) no-repeat 0px center;
     background-size: 18px;
 }
 
@@ -286,7 +287,8 @@ thead {
     margin-right: 1rem;
 }
 
-#active, #students-counter {
+#active,
+#students-counter {
     font-weight: 600;
     color: #0d97ce;
 }
@@ -297,7 +299,7 @@ thead {
     margin: 10px 0;
     font-weight: 600;
     color: #f6f6f6;
-    background-color:rgb(52, 189, 52);
+    background-color: rgb(52, 189, 52);
     border: none;
     cursor: pointer;
 }
@@ -305,7 +307,7 @@ thead {
 #new-student-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    background-color:rgb(44, 239, 44) ;
+    background-color: rgb(44, 239, 44);
 }
 
 /* Mobile responsiveness */
@@ -326,38 +328,39 @@ thead {
 }
 
 @media (min-width: 700px) {
-  body {
-    grid-template-columns: 1fr 3fr 1fr; 
-  }
+    body {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
 
-  main {
-    grid-column: 2 / 2;
-  }
+    main {
+        grid-column: 2 / 2;
+    }
 
-  .student-list {
-    width: 1000px;
-    height: 600px;
-  }
+    .student-list {
+        width: 1000px;
+        height: 600px;
+    }
 
-  .form-container {
-    margin: 6rem 0;
-  }
+    .form-container {
+        margin: 6rem 0;
+    }
 
-  .table-container {
-    margin-bottom: 6rem;
-  }
+    .table-container {
+        margin-bottom: 6rem;
+    }
 }
 
 @media (max-width: 799px) {
-  body {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1f));
-  }
-  main {
-    grid-column: span 3;
-  }
+    body {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1f));
+    }
 
-  .student-list {
-    width: 92%;
-    margin: 1rem;
-  }
+    main {
+        grid-column: span 3;
+    }
+
+    .student-list {
+        width: 92%;
+        margin: 1rem;
+    }
 }
