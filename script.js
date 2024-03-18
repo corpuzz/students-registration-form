@@ -1,4 +1,5 @@
 const form = document.getElementById('form');
+const tableBtn = document.getElementById('new-student-btn');
 const firstName = document.getElementById('first-name');
 const middleName = document.getElementById('middle-name');
 const lastName = document.getElementById('last-name');
@@ -49,5 +50,5 @@ function insertEntry(e) {
     form.reset();
 }
 
+
 form.addEventListener('submit', insertEntry);
-testBtn.addEventListener('click', insertEntry);
